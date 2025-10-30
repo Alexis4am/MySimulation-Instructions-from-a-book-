@@ -42,6 +42,8 @@ namespace cyclone {
             z += v.z * scale ;
 
         }
+        //All of this does change the value of the vector
+        //Changes the values
        void operator *= (const real value){
         x *= value;
         y *= value;
@@ -58,6 +60,8 @@ namespace cyclone {
             z -= v.z;
         }
 
+        //This doesn't change the values of the vector
+        //Returns a new vector
         Vector3 operator*(const real value) const{
         return Vector3(x*value, y*value, z*value);
         }
